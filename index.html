@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Blog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My Blog</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Categories</a>
+      <a href="#">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Blog Post Section -->
+    <section class="blog-posts">
+      <article class="post">
+        <h2>Welcome to My Blog</h2>
+        <p>This is a sample blog post. Stay tuned for more content!</p>
+        <div class="comment-section">
+          <h4>Comments</h4>
+          <ul id="commentList">
+            <!-- Comments appear here -->
+          </ul>
+          <form id="commentForm">
+            <input type="text" id="commentInput" placeholder="Write a comment..." required />
+            <button type="submit">Post</button>
+          </form>
+        </div>
+      </article>
+    </section>
+
+    <!-- Admin Post Form -->
+    <section class="admin-form">
+      <h2>Add New Blog Post</h2>
+      <form id="postForm">
+        <input type="text" id="postTitle" placeholder="Post Title" required />
+        <textarea id="postContent" placeholder="Post Content" required></textarea>
+        <button type="submit">Add Post</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Blog</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
